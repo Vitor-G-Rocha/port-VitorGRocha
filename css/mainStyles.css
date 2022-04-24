@@ -1,0 +1,207 @@
+*{    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #202020;
+    color: #fff;
+    /* Remove text selection highlight */ 
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 10vh;        
+}
+
+.header-name{    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;  
+    font-size: 0px; /*Remove white spaces between spans*/   
+}
+
+.header-name span{
+    font-size: 35px;
+    font-family: 'Aclonica';
+    text-shadow: -1px 0 0px #039be5, 0 1px 0px #27a4e2, -2px 1px 0px #039be5, -1px 2px 0px #27a4e2, 
+    -3px 2px 0px #039be5, -2px 3px 0px #27a4e2, -4px 3px 0px #039be5, -3px 4px 0px #27a4e2, -5px 4px 0px #039be5, 
+    -4px 5px 0px #27a4e2, -6px 5px 0px #039be5, -5px 6px 15px #000000;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.header-name:hover span{
+    cursor: pointer;
+    position: relative;
+}
+
+/* Transform text on mouse hover */
+.header-name:hover span:nth-child(1){ transform: scale(1.41);  z-index: 7; }
+.header-name:hover span:nth-child(2){ transform: scale(1.33);  z-index: 6; }
+.header-name:hover span:nth-child(3){ transform: scale(1.25);  z-index: 5; }
+.header-name:hover span:nth-child(4){ transform: scale(1.16);  z-index: 4; }
+.header-name:hover span:nth-child(5){ transform: scale(1.08);  z-index: 3; }
+.header-name:hover span:nth-child(7){ transform: scale(1);     z-index: 2; }
+.header-name:hover span:nth-child(8){ transform: scale(0.83);  z-index: 1; }
+.header-name:hover span:nth-child(9){ transform: scale(0.83);  z-index: 0; }
+.header-name:hover span:nth-child(10){ transform: scale(0.83); z-index: 1; }
+.header-name:hover span:nth-child(11){ transform: scale(1);    z-index: 2; }
+.header-name:hover span:nth-child(13){ transform: scale(1.08); z-index: 3; }
+.header-name:hover span:nth-child(14){ transform: scale(1.16); z-index: 4; }
+.header-name:hover span:nth-child(15){ transform: scale(1.25); z-index: 5; }
+.header-name:hover span:nth-child(16){ transform: scale(1.33); z-index: 6; }
+.header-name:hover span:nth-child(17){ transform: scale(1.41); z-index: 7; }
+
+.header-description{    
+    display: flex;     
+}
+
+.header-description span{
+    color: #8f8f8f;    
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .4s, color .2s;
+    background: transparent;
+}
+
+.header-description span:hover{
+    color: #fff;    
+    transform: scale(1.04);
+    cursor: default;
+}
+
+.header-description span::after{
+    content: "";    
+    background-color: #8f8f8f;
+    width: 2px;
+    height: 1rem;
+    margin: 0 0.5rem 0 0.5rem;            
+}
+
+.header-description span:last-child::after {
+    display: none;
+}
+
+.my-photo{    
+    display: flex;    
+    justify-content: center;
+    align-items: center;        
+}
+
+.my-photo img{
+    position: relative;
+    width: 35%;
+    background: transparent;   
+    transition: .6s;
+}
+.my-photo:hover img{
+    transform: scale(1.20);
+    cursor: default;
+}
+
+.footer-bottom{
+    display: flex;  
+    justify-content: center;
+    align-items: center;  
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer-bottom p{
+    font-size: 10px;
+}
+
+.flex-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-links a{
+    text-decoration: none;
+    color: #039be5;
+    background-color: #fff;    
+    line-height: 2rem;  
+    margin-top: 1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    width: fit-content;
+    box-shadow: inset 0 0 0 0 #039be5;
+    transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+.flex-links a:hover{
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #039be5;
+}
+
+/*Quote component*/
+
+.component{    
+    width: 300px;      
+    background: transparent;    
+  }
+  
+  .component blockquote.quote {
+      font-size: 16px;
+      position: relative; 
+      text-align: center;
+      padding: 1rem 1.2rem;
+      width: 80%;  /* create space for the quotes */
+      color: #039be5;
+      margin: 1rem auto 2rem;
+  }
+  .component blockquote {
+      background:
+      linear-gradient(to right, #039be5 4px, transparent 4px) 0 100%,
+      linear-gradient(to left, #039be5 4px, transparent 4px) 100% 0,
+      linear-gradient(to bottom, #039be5 4px, transparent 4px) 100% 0,
+      linear-gradient(to top, #039be5 4px, transparent 4px) 0 100%;
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+  }    
+  
+  /* -- create the quotation marks -- */
+  .component blockquote.quote:before,
+  .component blockquote.quote:after{
+      font-family: FontAwesome;
+      position: absolute;
+      color: #039be5;
+      font-size: 34px;
+  }
+  
+  .component blockquote:before{
+      content: "\f10d";
+      top: -12px;
+      margin-right: -20px;
+      right: 100%;
+  }
+  .component blockquote:after{
+      content: "\f10e";
+      margin-left: -20px;
+      left: 100%;  
+      top: auto;
+      bottom: -20px;
+  }
+
+  @media (max-width: 427px) {
+    .header-name span{
+        font-size: 25px;
+    }
+  }
