@@ -70,6 +70,9 @@
 
 .header-description span{
     color: #8f8f8f;    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     font-size: 12px;
     display: flex;
     justify-content: center;
@@ -122,6 +125,9 @@
 }
 
 .footer-bottom p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     font-size: 10px;
 }
 
@@ -150,6 +156,39 @@
     color: #fff;
     box-shadow: inset 200px 0 0 0 #039be5;
 }
+
+/*Collapsible menu
+
+.collapsible {    
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: fit-content;
+    border: none;
+    text-align: center;
+    outline: none;    
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background: transparent;
+  }
+*/
 
 /*Quote component*/
 
