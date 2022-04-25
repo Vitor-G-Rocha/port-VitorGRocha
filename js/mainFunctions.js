@@ -1,3 +1,8 @@
+//Get current year
+function getYear(){
+    return new Date().getFullYear();
+}
+
 //Calculate my age function
 function calcAge(){
     var dob = new Date("12/24/1994");
@@ -18,3 +23,5 @@ $("#born").text("12-24-1994");
 $("#city").text("Aimorés");
 $("#country").text("Brazil");
 //////////////////////////////////////////////////////////
+//Set current year on copyright
+$("#current-year").text(getYear());
