@@ -2,6 +2,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #202020;
     color: #fff;
+    text-shadow: 1px 1px 1px #000;
     /* Remove text selection highlight */ 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -9,7 +10,11 @@
        -moz-user-select: none; /* Old versions of Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+                                  supported by Chrome, Edge, Opera and Firefox */    
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /*Border test*/
@@ -149,6 +154,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 24vh;
 }
 
 .flex-links a{
@@ -160,21 +166,23 @@
     padding-left: 5px;
     padding-right: 5px;
     font-weight: bold;
-    width: fit-content;
+    width: 150px;
+    text-align: center;    
     box-shadow: inset 0 0 0 0 #039be5;
     transition: .6s ,color .4s ease-in-out, box-shadow .4s ease-in-out;
 }
 
 .flex-links a:hover{
     color: #fff;
-    box-shadow: inset 200px 0 0 0 #039be5;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: inset 200px 0 0 0 #039be5;    
 }
 
 /*Quote component*/
 
 .component{    
     width: 300px;      
-    background: transparent;    
+    background: transparent;   
   }
   
   .component blockquote.quote {
